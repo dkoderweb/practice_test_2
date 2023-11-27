@@ -7,9 +7,9 @@ php artisan serve
                   <p>
 npm run dev
                   </p>
-                  <p>
+                  <b>
 ----admin login----
-                  </p>
+                  </b>
                   <p>
 email : admin@admin.com
                   </p>

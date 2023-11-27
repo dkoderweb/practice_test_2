@@ -8,11 +8,18 @@ php artisan serve
 npm run dev
                   </p>
                   <b>
-----admin login----
+----Admin login----
                   </b>
                   <p>
 email : admin@admin.com
                   </p>
                   <p>
 password : admin
+                  </p>
+
+                   <b>
+----Database name ----
+                  </b>
+                   <p>
+project.sql
                   </p>

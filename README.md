@@ -1,13 +1,10 @@
- <b>----Run laravel project----</b>
-<p>php artisan serve</p>
-<p>npm run dev</p>
-<b>----Admin login----</b>
-<p>email : admin@admin.com</p>
-<p>password : admin</p>
+**----Run laravel project----**
+- `php artisan serve`
+- `npm run dev`
 
-                   <b>
-----Database name ----
-                  </b>
-                   <p>
-project.sql
-                  </p>
+**----Admin login----**
+- Email: admin@admin.com
+- Password: admin
+
+**----Database name----**
+- `project.sql`

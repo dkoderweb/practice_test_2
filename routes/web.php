@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\DropdownController;
+use App\Http\Controllers\Admin\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,5 +33,13 @@ Route::middleware(['auth', 'user-access:user'])->group(function () {
 // admin routes
 Route::middleware(['auth', 'user-access:admin'])->group(function () {
   
-    Route::get('/admin/home', [HomeController::class, 'adminHome'])->name('admin.home');
+    Route::get('/admin/home', [DashboardController::class, 'index'])->name('admin.home');
+    Route::get('dependent-dropdown', [DropdownController::class, 'index']);
+    Route::post('api/fetch-states', [DropdownController::class, 'fetchState']);
+    Route::post('api/fetch-cities', [DropdownController::class, 'fetchCity']);
+    Route::get('/admin/users/delete/{id}', [UserController::class, 'delete'])->name('users.delete');
+    Route::resource('users', UserController::class);
+
 });
+
+
